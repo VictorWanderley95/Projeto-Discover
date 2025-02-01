@@ -172,6 +172,10 @@ footer {
   font-size: 14px;
 }
 
+footer a {
+  font-weight: 500;
+}
+
 /* media queries */
 @media (min-width: 700px) {
   :root {
@@ -200,4 +204,16 @@ footer {
   to {
     left: 0;
   }
+}
+
+.heart::before {
+  font-size: 16px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  content: "💙";
+}
+
+.light .heart::before {
+  font-size: 16px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  content: "❤️";
 }
